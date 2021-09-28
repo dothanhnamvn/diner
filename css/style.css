@@ -1,0 +1,38 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+body, html{
+    color: rgb(22 28 45 / 70%);
+    background-color: #fff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+.orangeFontColor{
+    color: #ff6600;
+}
+
+.orangeBgColor{
+    background-color: #ff6600;
+}
+
+.titleFontColor{
+    color: #232121;
+}
+
+.whiteFontColor{
+    color:white;
+}
