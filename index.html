@@ -20,7 +20,8 @@
     <!-- BS4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <!-- MAGNIFIC-POPUP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -31,20 +32,20 @@
     <section class="dinerAbout"></section>
     <section class="dinerRest"></section>
     <!-- Triều làm -->
-    <section class="whatNew">     
+    <section class="whatNew">
             <div class="title--center">
                 <h5 class="paficio--title" >What's New</h5>
                 <h2>Popular Categories</h2>
             </div>
             <div class="new__content">
-                <div class="row ">
+                <div class="row">
                     <div class="new__item col-6 col-lg-4">
                         <div class="new__img">
-                         <img src="./img/g1.jpg" alt="g1">
-                            <div class="new__text">
-                                <h4>Vegetarian</h4>
-                                <p>$350</p>
-                            </div>
+                                <img src="./img/g1.jpg" alt="g1">
+                                   <div class="new__text">
+                                       <h4>Vegetarian</h4>
+                                       <p>$350</p>
+                                   </div>
                         </div>
                     </div>
                     <div class="new__item col-6 col-lg-4">
@@ -180,8 +181,61 @@
             </div>
         </div>
     </section>
-    <section class="deliJump"></section>
-    <section class="dinerVideo"></section>
+    <section class="deliJump">
+        <div class="jump__content ">
+            <div class="jump__text container">
+                    <h2>Deliciousness jumping into the mouth.</h2>
+                    <div class="jump__button">
+                        <button>Read More<i class="fa fa-angle-right"></i></button>
+                        <button>Contact us<i class="fa fa-angle-right"></i></button>
+                    </div>
+                </div>
+        </div>
+        <div class="row container">
+            <div class="jump__item col-3">
+                <div class="jump__bg">
+                    <i class="fa fa-building"></i>
+                    <h2>15,100</h2>
+                    <p>Branches</p>
+                </div>
+            </div>
+            <div class="jump__item col-3">
+                <div class="jump__bg">
+                    <i class="fa fa-utensils"></i>
+                    <h2>19,256</h2>
+                    <p>Food Items</p>
+                </div>
+            </div>
+            <div class="jump__item col-3">
+                <div class="jump__bg">
+                    <i class="fa fa-users"></i>
+                    <h2>12,100</h2>
+                    <p>Chefs</p>
+                </div>
+            </div>
+            <div class="jump__item col-3">
+                <div class="jump__bg">
+                    <i class="fa fa-smile"></i>
+                    <h2>2,560</h2>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dinerVideo">
+        <div class="video__content container">
+            <div class="video__bg">
+                <a href="#dinnerVideo" class="popup-video ">
+                  <span>
+                    <i class="fa fa-play"></i>
+                  </span>
+                </a>
+              </div>
+              <div id="dinnerVideo" class="mfp-hide">
+                <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+              </div>
+        </div>
+    </section>
     <!-- Quân làm -->
     <section class="dinerPost"></section>
     <section class="dinerTestimonial"></section>
@@ -194,6 +248,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+    <!-- MAGNIFIC-POPUP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+          $('.popup-video').magnificPopup({
+            type: 'inline',
+    
+            fixedContentPos: false,
+            fixedBgPos: true,
+    
+            overflowY: 'auto',
+    
+            closeBtnInside: true,
+            preloader: false,
+            midClick: true,
+          });
+    
+        });
+      </script>
 </body>
 
 </html>
