@@ -14,6 +14,7 @@ body, html{
     background-color: #fff;
     font-family: 'Quicksand', sans-serif;
     font-size: 18px;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -40,10 +41,6 @@ body, html{
 .whatNew{
     background-color: #f7f7f7;
     padding: 100px 0;
-}
-.new__content{
-    width: 80%;
-    margin: auto;
 }
 .title--center{
     text-align: center;
@@ -84,8 +81,10 @@ body, html{
 }
 .new__text{
     position: absolute;
-    left: 40px;
-    bottom: 20px;
+    bottom:0;
+    left:0;
+    transition: all 0.5s;
+    transform: translate(40px, -20px );
 }
 .new__img::before{
     position: absolute;
@@ -114,8 +113,6 @@ body, html{
     background-color: #fafafa;
 }
 .meal__content{
-    width: 80%;
-    margin: auto;
     padding: 100px 0;
 }
 .dinerMeal .meal__item{
@@ -163,14 +160,12 @@ body, html{
     color: #ff6600;
 }
 /* DELIJUMP */
-
 .jump__content{
     position: relative;
     background-image: url(../img/banner2.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 150px;
 }
 .jump__content::before{
     position: absolute;
@@ -327,6 +322,8 @@ body, html{
     margin-top: 200px;
     height: 500px;
 }
+
+/* KEYFRAME */
 @keyframes animate-ripple{
     0%{
         box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4;
@@ -336,5 +333,45 @@ body, html{
     }
     100%{
         box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+    }
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1080px) {
+    .jump__text h2{
+        font-size: 40px;
+        line-height: 50px;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .jump__bg{
+        transform: translateY(0);
+    }
+    .jump__bg:hover{
+        transform: translateY(-5px);
+    }
+}
+@media screen and (max-width: 900px) {
+    .video__bg{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .new__text{
+        transition: all 0.5s;
+        transform: translate(20px , 5px);
+    }
+    .new__text h4{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .jump__text h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 640px  ) {
+    .video__bg{
+        height: 350px;
     }
 }
