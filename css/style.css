@@ -462,59 +462,6 @@ body, html{
     height: 500px;
 }
 
-/* KEYFRAME */
-@keyframes animate-ripple{
-    0%{
-        box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4;
-    }
-    70%{
-        box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0;
-    }
-    100%{
-        box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
-    }
-}
-/* RESPONSIVE */
-@media screen and (max-width: 1080px) {
-    .jump__text h2{
-        font-size: 40px;
-        line-height: 50px;
-        max-width: 100%;
-    }
-}
-@media screen and (max-width: 992px) {
-    .jump__bg{
-        transform: translateY(0);
-    }
-    .jump__bg:hover{
-        transform: translateY(-5px);
-    }
-}
-@media screen and (max-width: 900px) {
-    .video__bg{
-        height: 400px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .new__text{
-        transition: all 0.5s;
-        transform: translate(20px , 5px);
-    }
-    .new__text h4{
-        font-size: 18px;
-        line-height: 28px;
-    }
-    .jump__text h2{
-        font-size: 35px;
-        line-height: 40px;
-    }
-}
-@media screen and (max-width: 640px  ) {
-    .video__bg{
-        height: 350px;
-    }
-}
-
 /* FOOTER */
 .dinerFooter{   
     background-color: #000;
@@ -613,3 +560,57 @@ body, html{
 .footer__bot ul li{
     list-style: none;
 }
+
+/* KEYFRAME */
+@keyframes animate-ripple{
+    0%{
+        box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4;
+    }
+    70%{
+        box-shadow: 0 0 0 20px #fff0, 0 0 0 40px #fff0;
+    }
+    100%{
+        box-shadow: 0 0 0 0 #fff0, 0 0 0 0 #fff0;
+    }
+}
+/* RESPONSIVE */
+@media screen and (max-width: 1080px) {
+    .jump__text h2{
+        font-size: 40px;
+        line-height: 50px;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .jump__bg{
+        transform: translateY(0);
+    }
+    .jump__bg:hover{
+        transform: translateY(-5px);
+    }
+}
+@media screen and (max-width: 900px) {
+    .video__bg{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .new__text{
+        transition: all 0.5s;
+        transform: translate(20px , 5px);
+    }
+    .new__text h4{
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .jump__text h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+}
+@media screen and (max-width: 640px  ) {
+    .video__bg{
+        height: 350px;
+    }
+}
+
