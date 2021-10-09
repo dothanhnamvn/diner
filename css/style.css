@@ -59,13 +59,13 @@ body, html{
     margin: 0;
     padding: 0;
 }
+.container{
+    max-width: 1200px;
+}
 
 /* POST */
 .dinerPost{
     background: #f7f7f7;
-}
-.dinerPost__container{
-    max-width: 1200px;
 }
 .dinerPost__content{
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
@@ -468,9 +468,6 @@ body, html{
     color: #a5a2a1;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
-.dinerFooter__top{
-    max-width: 1200px;
-}
 .dinerFooter a{
     text-decoration: none;
     font-size: 17px;
@@ -553,13 +550,33 @@ body, html{
     padding: 1.2em 0;
     background:#000;
     border-top: 1px solid rgb(255 255 255 / 5%);
-}
-.footer__copyright{
-    max-width: 1200px;
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .footer__bot ul li{
     list-style: none;
 }
+.footer__left p{
+    color: #ddd;
+    font-family: 'Quicksand', sans-serif;
+}
+.footer__left a{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.footer__bot a{
+    color: #ff6600;
+    text-decoration: none;
+}
+.footer__left a:hover{
+    color: #fff;
+}
+.footer__right a{
+    color: #a5a2a1;
+}
+.footer__right a:hover{
+    color: #ff6600;
+}
+
 
 /* KEYFRAME */
 @keyframes animate-ripple{
