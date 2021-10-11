@@ -271,6 +271,12 @@ body, html{
     padding-top: 20px;
     font-weight: 600;
 }
+.deliJump .jump__item1{
+    padding-left: 0;
+}
+.deliJump .jump__item4{
+    padding-right: 0;
+}
 /* DINNERVIDEO */
 .dinerVideo{
     padding-top: 100px ;
@@ -662,6 +668,12 @@ body, html{
     }
     .dinerPost__container{
         max-width: 540px;
+    }
+    .deliJump .jump__item2{
+        padding-right: 0;
+    }
+    .deliJump .jump__item3{
+        padding-left: 0;
     }
 }
 @media screen and (max-width: 640px) {
