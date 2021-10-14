@@ -40,6 +40,9 @@ body, html{
 .title{
     text-align: center;
 }
+.title--left{
+    text-align: left;
+}
 .title h6{
     font-size: 20px;
     font-weight: 400;
@@ -51,6 +54,9 @@ body, html{
     margin: 0;
     padding: 0;
 }
+.title--white h6{
+    color: white;
+}
 .title h3{
     color: #232121;
     font-size: 38px;
@@ -59,8 +65,89 @@ body, html{
     margin: 0;
     padding: 0;
 }
-
-
+/* DINNERABOUT */
+.about__title h2{
+    color: #232121;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;   
+}
+/* DINNERREST */
+.rest__content{
+    background-color: #ff6600;
+}
+.left__img{
+    background-image: url(../img/banner3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 620px;
+    z-index: 1;
+    position: relative;
+}
+.left__img::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.349);
+}
+.dinerRest .row{
+    margin: 0;
+}
+.dinerRest .right__content .best__food , .best__deal{
+    padding-left: 0;
+}
+.right__content h6{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: white;
+    display: block;
+    font-family: 'Pacifico', cursive;
+    margin: 0;
+    padding: 0;
+}
+.right__content h3{
+    color: #232121;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;   
+    margin: 0;
+    padding: 0;
+}
+.rest__right p{
+    color: #ffdfc9;
+    line-height: 30px;
+}
+.rest__right i{
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 25px;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff6600 ;
+}
+.rest__right a{
+    display: block;
+    text-decoration: none;
+    color: #232121;
+    font-size: 20px;
+    font-weight: 700;
+}
+.best__deal:hover i{
+    color: #ffc600;
+    transition: all 0.5s;
+}
+.best__food:hover i{
+    color: #ffc600;
+    transition: all 0.5s;
+}
 /* WHATNEW */
 .whatNew{
     background-color: #f7f7f7;
@@ -69,10 +156,6 @@ body, html{
 .title--center{
     text-align: center;
     margin-bottom: 30px;
-}
-.paficio--title{
-    font-family: 'Pacifico', cursive;
-    color: #ff6600;
 }
 .whatNew .new__img img{
     object-fit: cover;
@@ -585,7 +668,32 @@ body, html{
 .footer__right a:hover{
     color: #ff6600;
 }
+/* BACK TO TOP */
+.back{
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 60px;
+    background-color: #ff6600;
+    border-radius: 50%;
 
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+}
+.back:hover i{
+    color: white;
+}
+.cd-top--is-visible{
+    visibility: visible;
+    opacity: 1;
+}
 
 /* KEYFRAME */
 @keyframes animate-ripple{
@@ -626,6 +734,9 @@ body, html{
 
 }
 @media screen and (max-width: 992px) {
+    .left__img{
+        min-height: 200px;
+    }
     .jump__bg{
         transform: translateY(0);
     }
