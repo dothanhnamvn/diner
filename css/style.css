@@ -66,6 +66,117 @@ body, html{
     padding: 0;
 }
 
+/* dark theme */
+.dark #myBody{
+    color: #c2d0da;
+}
+.dark #switchButton .fa-sun {
+    display: block;
+}
+.dark #switchButton .fa-moon {
+    display: none;  
+}
+.dark .header__search input{
+    border: 1px solid #232220;
+    background: #232220;
+}
+.dark .header__search i{
+    color: #c2d0da;
+} 
+.dark .dinerAbout{
+    background-color: #232220;
+    color: #c2d0da;
+}
+.dark .dinerAbout{
+    background-color: #232220;
+}
+.dark .dinerAbout h3{
+    color: #eee;
+}
+.dark .whatNew {
+    background-color: #282828;
+    color: #c2d0da;
+}
+.dark .whatNew {
+    background-color: #282828;
+}
+.dark .whatNew h3{
+    color: #eee;
+}
+.dark .dinerMeal{
+    background-color: #232220;
+    color: #c2d0da;
+}
+.dark .dinerMeal{
+    background-color: #232220;
+}
+.dark .dinerMeal h3{
+    color: #eee;
+}
+.dark .dinerMeal .meal__card{
+    background-color: #232220;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.dark .dinerMeal p span:last-of-type{
+    color: #eee;
+}
+.dark .dinerMeal p:hover span:last-of-type{
+    color: #ff6600;
+}
+.dark .dinerMeal span i{
+    background-color: #282828;
+}
+.dark .meal__item:hover i{
+    background-color: #ff6600;
+}
+.dark .deliJump{
+    background-color: #282828;
+}
+.dark .jump__bg{
+    background-color: #232220;
+    color: #eee;
+}
+.dark .jump__bg:hover{
+    transform: translateY(-65px);
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+.dark .dinerVideo {
+    background-color: #282828;
+}
+.dark .dinerPost{
+    background-color: #282828;
+}
+.dark .dinerPost h3{
+    color: #eee;
+}
+.dark .dinerPost .dinerPost__text a{
+    color: #eee;
+}
+.dark .dinerPost .dinerPost__text p{
+    color: #eee;
+}
+.dark .dinerTestimonial {
+    background-color: #282828;
+}
+.dark .dinerTestimonial  h3{
+    color: #eee;
+}
+.dark .dinerTestimonial a{
+    color: #eee;
+}
+.dark .dinerTestimonial p{
+    color: #eee;
+}
+.dark .dinerTestimonial q{
+    color: #eee;
+}
+.dark .dinerFooter input{
+    background: #282828;
+}
+.dark .dinerFooter__social a{
+    background: #282828;
+}
+
 /* HEADER */
 header{
     position: absolute;
@@ -388,7 +499,7 @@ header{
     background-color: #fafafa;
 }
 .meal__content{
-    padding: 100px 0;
+    padding: 100px 15px;
 }
 .dinerMeal .meal__item{
     width: 90%;
