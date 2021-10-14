@@ -25,21 +25,68 @@
     <!-- BS4 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    
+
     <!-- owlCarousel -->
     <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
 
 
     <!-- MAGNIFIC-POPUP -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+        integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- Nam làm -->
+    <header>
+        <div class="header__content container">
+            <div class="header__logo">
+                <h1 class="m-0">
+                    <a href="#">Diner</a>
+                </h1>
+            </div>
+            <div class="header__navbar">
+                <div class="header__search">
+                    <form class="position-relative">
+                        <input type="search" placeholder="Search here..">
+                        <i class="fa fa-search"></i>
+                    </form>
+                </div>
+                <div class="header__mode">
+                    <button id="btnMode">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
+                </div>
+                <div class="mobile-nav-button">
+                    <button id="openNavs" type="button">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="overlay overlay-scale" id="showNavs">
+                <button type="button" class="overlay-close" id="closeNavs"><i class="fa fa-times"
+                        aria-hidden="true"></i></button>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">404</a></li>
+                        <li><a href="#">Landing Page</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shot Codes</a></li>
+                        <li><a href="#">Email</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <section class="dinerBanner"></section>
     <section class="dinerAbout">
         <div class="about__content container">
@@ -51,10 +98,16 @@
                     </div>
                 </div>
                 <div class="about__text col-lg-7">
-                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor sit.
+                    <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
+                        amet. Lorem ipsum init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum init dolor
+                        sit.
                         <br>
                         <br>
-                    Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet.</p>
+                        Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+                        tempufddfel. Lorem ipsum dolor sit amet elit. Non quae, fugiat nihil ad. Lorem ipsum dolor sit
+                        amet.
+                    </p>
                 </div>
             </div>
         </div>
@@ -68,14 +121,16 @@
                 </div>
                 <div class="rest__right col-lg-6 px-lg-4 py-lg-3 py-4">
                     <div class="right__content p-md-5 p-3">
-                            <h6>More than 3000 Restaurants</h6>
-                            <h3>Book a table easly at the best price</h3>
-                            <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.</p>
+                        <h6>More than 3000 Restaurants</h6>
+                        <h3>Book a table easly at the best price</h3>
+                        <p class="my-3">Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales quis.
+                            Integer sit amet mattis quam.Vivamus a ligula quam tesque et libero ut justo ultrices in.
+                        </p>
                         <div class="row mt-5">
                             <div class="best__deal col-6">
                                 <div class="deal__icon">
                                     <i class="fa fa-thumbs-up"></i>
-                                </div>          
+                                </div>
                                 <a href="#">Best Deals</a>
                                 <p class="mt-2">Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
                             </div>
@@ -94,80 +149,80 @@
     </section>
     <!-- Triều làm -->
     <section class="whatNew ">
-            <div class="title--center title">
-                <h6>What's New</h6>
-                <h3>Popular Categories</h3>
-            </div>
-            <div class="new__content container container-md container-sm">
-                <div class="row">
-                    <div class="new__item col-6 col-lg-4">
-                        <a href="#">
-                            <div class="new__img">                         
-                                    <img src="./img/g1.jpg" alt="g1">
-                                       <div class="new__text">
-                                           <h4>Vegetarian</h4>
-                                           <p>$350</p>
-                                       </div>
+        <div class="title--center title">
+            <h6>What's New</h6>
+            <h3>Popular Categories</h3>
+        </div>
+        <div class="new__content container container-md container-sm">
+            <div class="row">
+                <div class="new__item col-6 col-lg-4">
+                    <a href="#">
+                        <div class="new__img">
+                            <img src="./img/g1.jpg" alt="g1">
+                            <div class="new__text">
+                                <h4>Vegetarian</h4>
+                                <p>$350</p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="new__item col-6 col-lg-4">
-                        <a href="#">
-                            <div class="new__img">
-                                <img src="./img/g2.jpg" alt="g2">
-                                <div class="new__text">
-                                    <h4>Drinks</h4>
-                                    <p>$550</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="new__item col-6 col-lg-4">
-                        <a href="#">
-                            <div class="new__img">                           
-                                <img src="./img/g3.jpg" alt="g3">
-                                <div class="new__text">
-                                    <h4>Lunch</h4>
-                                    <p>$650</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="new__item col-6 col-lg-4">
-                        <a href="#">  
-                            <div class="new__img">
-                                <img src="./img/g4.jpg" alt="g4">
-                                <div class="new__text">
-                                    <h4>Bakery</h4>
-                                    <p>$550</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="new__item col-6 col-lg-4">
-                        <a href="#">
-                            <div class="new__img">         
-                                <img src="./img/g5.jpg" alt="g5">
-                                <div class="new__text">
-                                    <h4>Desserts</h4>
-                                    <p>$750</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="new__item col-6 col-lg-4">
-                        <a href="#"> 
-                            <div class="new__img">
-                                <img src="./img/g6.jpg" alt="g6">
-                                <div class="new__text">
-                                    <h4>Pizza</h4>
-                                    <p>$850</p>
-                                </div>
-                            </div> 
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-            </div>     
+                <div class="new__item col-6 col-lg-4">
+                    <a href="#">
+                        <div class="new__img">
+                            <img src="./img/g2.jpg" alt="g2">
+                            <div class="new__text">
+                                <h4>Drinks</h4>
+                                <p>$550</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="new__item col-6 col-lg-4">
+                    <a href="#">
+                        <div class="new__img">
+                            <img src="./img/g3.jpg" alt="g3">
+                            <div class="new__text">
+                                <h4>Lunch</h4>
+                                <p>$650</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="new__item col-6 col-lg-4">
+                    <a href="#">
+                        <div class="new__img">
+                            <img src="./img/g4.jpg" alt="g4">
+                            <div class="new__text">
+                                <h4>Bakery</h4>
+                                <p>$550</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="new__item col-6 col-lg-4">
+                    <a href="#">
+                        <div class="new__img">
+                            <img src="./img/g5.jpg" alt="g5">
+                            <div class="new__text">
+                                <h4>Desserts</h4>
+                                <p>$750</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="new__item col-6 col-lg-4">
+                    <a href="#">
+                        <div class="new__img">
+                            <img src="./img/g6.jpg" alt="g6">
+                            <div class="new__text">
+                                <h4>Pizza</h4>
+                                <p>$850</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="dinerMeal">
         <div class="meal__content container container container-md container-sm">
@@ -182,7 +237,8 @@
                                 <span>Soup</span>
                             </p>
                         </div>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
                     </div>
                 </div>
                 <div class="meal__item col-lg-4 col-md-6 col-12">
@@ -195,7 +251,8 @@
                                 <span>Drinks</span>
                             </p>
                         </div>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
                     </div>
                 </div>
                 <div class="meal__item col-lg-4 col-md-6 col-12">
@@ -208,7 +265,8 @@
                                 <span>Pizza</span>
                             </p>
                         </div>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
                     </div>
                 </div>
                 <div class="meal__item col-lg-4 col-md-6 col-12">
@@ -221,7 +279,8 @@
                                 <span>Breakfast</span>
                             </p>
                         </div>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
                     </div>
                 </div>
                 <div class="meal__item col-lg-4 col-md-6 col-12">
@@ -234,7 +293,8 @@
                                 <span>Lunch</span>
                             </p>
                         </div>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
                     </div>
                 </div>
                 <div class="meal__item col-lg-4 col-md-6 col-12">
@@ -247,7 +307,8 @@
                                 <span>Dinner</span>
                             </p>
                         </div>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -256,62 +317,63 @@
     <section class="deliJump">
         <div class="jump__content py-5 ">
             <div class="jump__text container pt-lg-2 pb-lg-4 py-4 ">
-                    <h2 class="py-lg-5">Deliciousness jumping into the mouth.</h2>
-                    <div class="jump__button pb-lg-5">
-                        <button>Read More<i class="fa fa-angle-right"></i></button>
-                        <button>Contact us<i class="fa fa-angle-right"></i></button>
-                    </div>
+                <h2 class="py-lg-5">Deliciousness jumping into the mouth.</h2>
+                <div class="jump__button pb-lg-5">
+                    <button>Read More<i class="fa fa-angle-right"></i></button>
+                    <button>Contact us<i class="fa fa-angle-right"></i></button>
                 </div>
+            </div>
         </div>
-        <div class="row container py-lg-0 pd-md-5 py-4">   
-                <div class="jump__item jump__item1 col-6 col-md-3 mt-md-0 mt-4">
-                    <div class="jump__bg">
-                        <i class="fa fa-building"></i>
-                        <h2 class="counter">15,100</h2>
-                        <p>Branches</p>
-                    </div>
+        <div class="row container py-lg-0 pd-md-5 py-4">
+            <div class="jump__item jump__item1 col-6 col-md-3 mt-md-0 mt-4">
+                <div class="jump__bg">
+                    <i class="fa fa-building"></i>
+                    <h2 class="counter">15,100</h2>
+                    <p>Branches</p>
                 </div>
-                <div class="jump__item jump__item2 col-6 col-md-3 mt-md-0 mt-4">
-                    <div class="jump__bg">
-                        <i class="fa fa-utensils"></i>
-                        <h2 class="counter">19,256</h2>
-                        <p>Food Items</p>
-                    </div>
+            </div>
+            <div class="jump__item jump__item2 col-6 col-md-3 mt-md-0 mt-4">
+                <div class="jump__bg">
+                    <i class="fa fa-utensils"></i>
+                    <h2 class="counter">19,256</h2>
+                    <p>Food Items</p>
                 </div>
-                <div class="jump__item jump__item3 col-6 col-md-3 mt-md-0 mt-4">
-                    <div class="jump__bg">
-                        <i class="fa fa-users"></i>
-                        <h2 class="counter">12,100</h2>
-                        <p>Chefs</p>
-                    </div>
+            </div>
+            <div class="jump__item jump__item3 col-6 col-md-3 mt-md-0 mt-4">
+                <div class="jump__bg">
+                    <i class="fa fa-users"></i>
+                    <h2 class="counter">12,100</h2>
+                    <p>Chefs</p>
                 </div>
-                <div class="jump__item jump__item4 col-6 col-md-3 mt-md-0 mt-4">
-                    <div class="jump__bg">
-                        <i class="fa fa-smile"></i>
-                        <h2 class="counter">2,560</h2>
-                        <p>Happy Customers</p>
-                    </div>
+            </div>
+            <div class="jump__item jump__item4 col-6 col-md-3 mt-md-0 mt-4">
+                <div class="jump__bg">
+                    <i class="fa fa-smile"></i>
+                    <h2 class="counter">2,560</h2>
+                    <p>Happy Customers</p>
                 </div>
+            </div>
         </div>
     </section>
     <section class="dinerVideo py-5">
         <div class="video__content container">
             <div class="video__bg">
                 <a href="#dinnerVideo" class="popup-video ">
-                  <span>
-                    <i class="fa fa-play"></i>
-                  </span>
+                    <span>
+                        <i class="fa fa-play"></i>
+                    </span>
                 </a>
-              </div>
-              <div id="dinnerVideo" class="mfp-hide">
-                <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-              </div>
+            </div>
+            <div id="dinnerVideo" class="mfp-hide">
+                <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen"
+                    allowfullscreen=""></iframe>
+            </div>
         </div>
     </section>
     <!-- Quân làm -->
     <section class="dinerPost py-5">
         <div class="dinerPost__container container py-2 py-md-5 w-auto">
-            <div class="title"> 
+            <div class="title">
                 <h6>Latest Posts</h6>
                 <h3>Blog Posts</h3>
             </div>
@@ -319,8 +381,8 @@
                 <div class="dinerPost__item col-lg-4 col-md-6 mt-5">
                     <div class="dinerPost__img position-relative">
                         <a href="#">
-                            <img src="./img/banner1.jpg" class="card-img-top radius-image" alt="banner1"> 
-                        </a>  
+                            <img src="./img/banner1.jpg" class="card-img-top radius-image" alt="banner1">
+                        </a>
                         <div class="post-pos">
                             <a href="#">
                                 Reciepe
@@ -328,8 +390,8 @@
                             <span class="ml-2">
                                 <i class="fa fa-clock"></i>
                                 10 Min Cook
-                             </span>
-                        </div>  
+                            </span>
+                        </div>
                     </div>
                     <div class="dinerPost__text">
                         <a href="#">
@@ -353,8 +415,8 @@
                 <div class="dinerPost__item col-lg-4 col-md-6 mt-5">
                     <div class="dinerPost__img position-relative">
                         <a href="#">
-                            <img src="./img/banner3.jpg" class="card-img-top radius-image" alt="banner1"> 
-                        </a>  
+                            <img src="./img/banner3.jpg" class="card-img-top radius-image" alt="banner1">
+                        </a>
                         <div class="post-pos">
                             <a href="#">
                                 Soup
@@ -362,8 +424,8 @@
                             <span class="ml-2">
                                 <i class="fa fa-clock"></i>
                                 10 Min Cook
-                             </span>
-                        </div>  
+                            </span>
+                        </div>
                     </div>
                     <div class="dinerPost__text">
                         <a href="#">
@@ -387,8 +449,8 @@
                 <div class="dinerPost__item col-lg-4 col-md-6 mt-5">
                     <div class="dinerPost__img position-relative">
                         <a href="#">
-                            <img src="./img/banner1.jpg" class="card-img-top radius-image" alt="banner1"> 
-                        </a>  
+                            <img src="./img/banner1.jpg" class="card-img-top radius-image" alt="banner1">
+                        </a>
                         <div class="post-pos">
                             <a href="#">
                                 Drinks
@@ -396,8 +458,8 @@
                             <span class="ml-2">
                                 <i class="fa fa-clock"></i>
                                 10 Min Cook
-                             </span>
-                        </div>  
+                            </span>
+                        </div>
                     </div>
                     <div class="dinerPost__text">
                         <a href="#">
@@ -442,8 +504,10 @@
                                         </q>
                                     </blockquote>
                                     <p>
-                                        My new site is so much faster and easier to work with than my old site. They are here to
-                                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                        My new site is so much faster and easier to work with than my old site. They are
+                                        here to
+                                        help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                        labore.
                                         Pellen tesque libero ut justo, ultrices in ligula.
                                     </p>
                                     <h3 class="m-0 mt-4">Johnson william</h3>
@@ -461,8 +525,10 @@
                                         </q>
                                     </blockquote>
                                     <p>
-                                        My new site is so much faster and easier to work with than my old site. They are here to
-                                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                        My new site is so much faster and easier to work with than my old site. They are
+                                        here to
+                                        help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                        labore.
                                         Pellen tesque libero ut justo, ultrices in ligula.
                                     </p>
                                     <h3 class="m-0 mt-4">Alexander sakura</h3>
@@ -480,8 +546,10 @@
                                         </q>
                                     </blockquote>
                                     <p>
-                                        My new site is so much faster and easier to work with than my old site. They are here to
-                                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                        My new site is so much faster and easier to work with than my old site. They are
+                                        here to
+                                        help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                        labore.
                                         Pellen tesque libero ut justo, ultrices in ligula.
                                     </p>
                                     <h3 class="m-0 mt-4">John wilson</h3>
@@ -499,8 +567,10 @@
                                         </q>
                                     </blockquote>
                                     <p>
-                                        My new site is so much faster and easier to work with than my old site. They are here to
-                                        help the customers to get their success. Nemo sit eos, quod minus eius illo labore.
+                                        My new site is so much faster and easier to work with than my old site. They are
+                                        here to
+                                        help the customers to get their success. Nemo sit eos, quod minus eius illo
+                                        labore.
                                         Pellen tesque libero ut justo, ultrices in ligula.
                                     </p>
                                     <h3 class="m-0 mt-4">Johnson william</h3>
@@ -522,7 +592,8 @@
                             <h2>Diner</h2>
                         </a>
                     </div>
-                    <p class="mb-0">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>   
+                    <p class="mb-0">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula.
+                        Semper at tempufddfel. Lorem ipsum dolor sit amet Semper at elit.</p>
                     <div class="dinerFooter__social mt-4">
                         <a href="#">
                             <i class="fab fa-facebook-f"></i>
@@ -574,7 +645,7 @@
             <div class="row align-items-center">
                 <div class="footer__left col-lg-8 col-md-12">
                     <p class="mb-0">
-                        © 2021 Diner. All rights reserved. Design by 
+                        © 2021 Diner. All rights reserved. Design by
                         <a href="#">W3Layouts</a>
                     </p>
                 </div>
@@ -600,12 +671,12 @@
     <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $(".owl-carousel").owlCarousel({
                 loop: true,
                 autoPlay: true,
                 items: 1,
-            });   
+            });
         });
     </script>
 
@@ -614,34 +685,38 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
     <!-- MAGNIFIC-POPUP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+        integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(document).ready(function () {
-          $('.popup-video').magnificPopup({
-            type: 'inline',
-    
-            fixedContentPos: false,
-            fixedBgPos: true,
-    
-            overflowY: 'auto',
-    
-            closeBtnInside: true,
-            preloader: false,
-            midClick: true,
-          });
-    
+            $('.popup-video').magnificPopup({
+                type: 'inline',
+
+                fixedContentPos: false,
+                fixedBgPos: true,
+
+                overflowY: 'auto',
+
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+            });
+
         });
-      </script>
-      <!-- COUNTUP -->
+    </script>
+    <!-- COUNTUP -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 
     <script src="./JS/jquery.countup.js"></script>
 
     <script>$('.counter').countUp();</script>
-      <!-- BACKTOTOP -->
-      <script src="./JS/util.js"></script>
-      <script src="./JS/backtotop.js"></script>
+    <!-- BACKTOTOP -->
+    <script src="./JS/util.js"></script>
+    <script src="./JS/backtotop.js"></script>
+
+    <script src="./js/showNavs.js"></script>
 </body>
 
 </html>
