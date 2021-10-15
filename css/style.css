@@ -363,6 +363,7 @@ header{
     min-height: 620px;
     z-index: 1;
     position: relative;
+    height: 100%;
 }
 .left__img::before{
     position: absolute;
@@ -994,12 +995,25 @@ header{
     /* .footer__right{
         white-space: nowrap;
     } */
-}   
+}
+@media screen and (max-width: 1280px) {
+    .about__content {
+        max-width: 1140px;
+    }
+} 
 @media screen and (max-width: 1200px) {
     .dinerPost__container{
         max-width: 960px;
     }
-    
+    .dinerBanner__content h3{
+        font-size: 48px;
+    }
+    .about__content {
+        max-width: 960px;
+    }
+    .about__content h3{
+        line-height: 40px;
+    }
 } 
 @media screen and (max-width: 1080px) {
     .jump__text h2{
@@ -1010,7 +1024,10 @@ header{
     .title h3{
         font-size: 32px;
     }
-
+    .rest__content h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 @media screen and (max-width: 992px) {
     .left__img{
@@ -1036,6 +1053,12 @@ header{
     }
     .footer__left{
         text-align: center;
+    }
+    .dinerBanner__content h3{
+        font-size: 44px;
+    }
+    .about__content {
+        max-width: 720px;
     }
 }
 @media screen and (max-width: 900px) {
@@ -1065,6 +1088,13 @@ header{
     .deliJump .jump__item3{
         padding-left: 0;
     }
+    .dinerBanner__content h3{
+        font-size: 40px;
+        line-height: initial;
+    }
+    .about__content {
+        max-width: 540px;
+    }
 }
 @media screen and (max-width: 640px) {
     .video__bg{
@@ -1084,4 +1114,38 @@ header{
     .dinerTestimonial__container{
         margin: auto;
     }   
+    .header__search{
+        /* visibility: hidden; */
+        display: none;
+    }
+    .header__content{
+        width: auto;
+    }
+    .header__bot{
+        width: auto;
+    }
+    .about__content{
+        width: auto;
+    }
+    .rest__content h3{
+        font-size: 30px;
+    }
+    .rest__content h6{
+        font-size: 16px;
+    }
+    .new__content{
+        width: auto;
+    }
+    .meal__content{
+        width: auto;
+    }
+    .jump__text{
+        width: auto;
+    }
+    .jump__branch{
+        width: auto;
+    }
+    .video__content{
+        width: auto;
+    }
 }
